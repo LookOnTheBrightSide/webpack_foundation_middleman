@@ -1,0 +1,25 @@
+
+*
+  box-sizing: border-box
+.welcome,
+.fluff
+  +grid-row
+  border: 1px solid rebeccapurple
+  .half
+    +grid-column(6)
+    background-color: #5296B7
+    color: $white
+  .fl
+    +grid-column(12)
+
++breakpoint(medium)
+  .welcome,
+  .fluff
+    +grid-row
+    border: 1px solid rebeccapurple
+    .half
+      +grid-column(1 of 2)
+      background-color: #5296B7
+      color: $white
+    .fl
+      +grid-column(1 of 4)
